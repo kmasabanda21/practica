@@ -16,7 +16,7 @@ public class ProfessorSubstitut extends  Professor {
 
 
     public String obtenirDades(){
-        return super.obtenirDades() + dataInici + dataFi;
+        return super.obtenirDades() +"(Profe amb sou: "+ canviarSou(double sou) + "del " + dataInici + dataFi;
     }
 
 }

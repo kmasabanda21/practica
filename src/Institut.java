@@ -13,12 +13,12 @@ public class Institut {
         this.profe = profe;
 
     }
-    public void afegirEstudiant(){
-
+    public void afegirEstudiant(String estudiant){
+        this.estudiant = estudiant;
     }
 
 
     public String imprimirInformacio(){
-        return "El Professor es diu " + this.profe ;
+        return "El Professor es diu " + this.profe  +" i el alumne es diu "+  this.estudiant;
     }
 }

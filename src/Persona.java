@@ -13,8 +13,15 @@ public class Persona {
         this.nom = nom;
 
     }
-    // Funcion retornar el nom i dni
+    public void assignarDni(String dni) throws Exception{
+        this.dni = dni;
+        if(dni == null){
+            throw new Exception("sense dni");
+
+        }
+    }
+
     public String obtenirDades (){
-        return "Persona que es diu " + this.nom;
+        return "Persona que es diu " + this.nom +" amb dni " + this.dni;
     }
 }

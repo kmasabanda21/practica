@@ -15,7 +15,7 @@ public class Professor extends Persona {
     }
 
     public String obtenirDades(){
-        return super.obtenirDades() + " amb nou sou " + this.sou;
+        return super.obtenirDades() + "(Profe amb sou: " + this.sou + ")";
     }
 
 }
