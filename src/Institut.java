@@ -4,6 +4,7 @@ public class Institut {
     private String nom;
     //public ArrayList <Persona> profe;
     private String profe;
+    private String estudiant;
 
     public Institut(){
     }

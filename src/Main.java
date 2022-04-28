@@ -2,7 +2,7 @@ import java.lang.reflect.Array;
 import java.util.Date;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
 
 
         Persona p1 = new Persona(); //instancia
@@ -18,6 +18,7 @@ public class Main {
 
         Estudiant e = new Estudiant();
         e.posarNota(2);
+        // e.posarNota(-2);
         e.canviarNom("Manuel");
         dades = e.obtenirDades();
         System.out.println(dades);
@@ -30,13 +31,16 @@ public class Main {
 
         Professor p = new Professor();
         p.canviarSou(2000);
+        //p.canviarSou(-2000);
+        //p.canviarSou(6000);
         p.canviarNom("Professor");
         dades = p.obtenirDades();
         System.out.println(dades);
 
         ProfessorSubstitut ps = new ProfessorSubstitut();
-        ps.posarDataFi(new Date());
-        ps.posarDataInicial(new Date());
+        Date dataInici = new Date(2021, 11, 1);
+        Date dataFi = new Date(2022, 6, 30);
+        ps.assignarSubstitucio(dataInici ,dataFi);
         ps.obtenirDades();
         dades = ps.obtenirDades();
         System.out.println(dades);
