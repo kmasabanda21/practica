@@ -1,13 +1,16 @@
+import java.util.Date;
+
 public class ProfessorSubstitut extends  Professor {
-    private String dataInici;
-    private String dataFi;
+    private Date dataInici;
+    private Date dataFi;
 
+    public void ProfessorSubstitut(){}
 
-
-    public void assignarSubstitucio (){
-    this.dataFi = dataFi;
-    this.dataInici = dataInici;
-
+    public void posarDataInicial(Date dataInici){
+        this.dataInici = dataInici;
+    }
+    public void posarDataFi (Date dataFi) {
+        this.dataFi = dataFi;
     }
 
     public String obtenirDades(){

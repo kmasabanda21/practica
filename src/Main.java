@@ -1,5 +1,10 @@
+import java.lang.reflect.Array;
+import java.util.Date;
+
 public class Main {
     public static void main(String[] args){
+
+
         Persona p1 = new Persona(); //instancia
         Persona p2 = new Persona();
 
@@ -17,6 +22,12 @@ public class Main {
         dades = e.obtenirDades();
         System.out.println(dades);
 
+        Institut i = new Institut();
+        i.afegirProfe("kenneth");
+        i.afegirEstudiant();
+        dades = i.imprimirInformacio();
+        System.out.println(dades);
+
         Professor p = new Professor();
         p.canviarSou(2000);
         p.canviarNom("Professor");
@@ -24,8 +35,12 @@ public class Main {
         System.out.println(dades);
 
         ProfessorSubstitut ps = new ProfessorSubstitut();
-        ps.assignarSubstitucio();
+        ps.posarDataFi(new Date());
+        ps.posarDataInicial(new Date());
+        ps.obtenirDades();
         dades = ps.obtenirDades();
+        System.out.println(dades);
+
 
 
 

@@ -1,7 +1,7 @@
 public class Professor extends Persona {
     private double sou;
 
-    public void canviarSou( double nota){
+    public void canviarSou( double sou){
         this.sou = sou;
 
     }
