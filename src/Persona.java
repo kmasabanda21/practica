@@ -14,14 +14,20 @@ public class Persona {
 
     }
     public void assignarDni(String dni) throws Exception{
-        this.dni = dni;
-        if(dni == null){
-            throw new Exception("sense dni");
 
+        if(this.dni == null){
+            this.dni = dni;
+        } else{
+            throw new Exception("Error DNI");
         }
+
     }
 
-    public String obtenirDades (){
-        return "Persona que es diu " + this.nom +" amb dni " + this.dni;
+    public String obtenirDades() throws Exception{
+        if(this.dni == null || this.nom == null ){
+            throw new Exception ("Sense DNI o Nom");
+        }else {
+           return "Persona que es diu " + this.nom + " amb dni " + this.dni;
+        }
     }
 }

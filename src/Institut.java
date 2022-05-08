@@ -1,15 +1,17 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Institut {
     private String nom;
-    //public ArrayList <Persona> profe;
     private String profe;
-    private String estudiant;
+    private String  estudiant;
+    public Institut(String nom){
+    this.nom = nom;
+    System.out.println(nom);
 
-    public Institut(){
     }
-
-    public void afegirProfe(String profe) {
+    // Codigo que no hace falta
+   public void afegirProfe(String profe) {
         this.profe = profe;
 
     }
